@@ -1,5 +1,6 @@
 ﻿using System;
 
+/*Дана сторона квадрата. Найти его периметр.*/
 
 namespace Lessons{
     class Program{
