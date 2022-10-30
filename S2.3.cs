@@ -1,5 +1,6 @@
 ﻿using System;
 
+/*Дан радиус окружности. Найти ее диаметр.*/
 
 namespace Lessons{
     class Program{
