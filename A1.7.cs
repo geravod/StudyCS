@@ -9,7 +9,7 @@ namespace Lessons{
              a = Convert.ToInt32(Console.ReadLine());
              b = Convert.ToInt32(Console.ReadLine());
              ab = Convert.ToInt32(Console.ReadLine());
-             string c = Convert.ToString(a * b / (ab * ab));
+             string c = Convert.ToString((a / ab) * (b / ab));
              Console.WriteLine(c);
         }
     }
