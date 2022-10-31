@@ -49,7 +49,7 @@ namespace Lessons{
                 Console.WriteLine("Слон не угрожает этому полю");
             }
 
-            if ((abs(a - c) == 1 && abs(b - d) == 1) || (a - c == 0 && abs(d - b) == 1) || (abs(a - c) == 1 && b - d == 0))
+            if ((abs(a - c) <= 1 && abs(b - d) <= 1))
             {
                 Console.WriteLine($"Король может сходить на поле {c}, {d}");
             }
@@ -58,7 +58,7 @@ namespace Lessons{
                 Console.WriteLine("Король не може сходить на это поле");
             }
 
-            if (((a == c) || (b == d)) || (abs(a - b) == abs(c - d)))
+            if (((a == c) || (b == d)) || (abs(a - b) == abs(c - d) || abs(a - b) == abs(c - d) || (a + c == b + d)))
             {
                 Console.WriteLine($"Ферзь угрожает полю {c}, {d}");
             }
@@ -71,7 +71,7 @@ namespace Lessons{
             {
                 Console.WriteLine($"Белая пешка может сходить на поле {c},{d}");
             }
-            else if ((c - a == 1 && d - b == 1) || (a - c == 1 && b - d == 1))
+            else if ((c - a == 1 && abs(d - b) == 1))
             {
                 Console.WriteLine($"Белая пешка может бить фигуру на поле {c}, {d}");
             }
@@ -80,11 +80,11 @@ namespace Lessons{
                 Console.WriteLine("Белая пешка не может сходить на это поле и нет фигур, которых можно бить на данном поле.");
             }
 
-            if (a - c == -1 && b == d)
+            if (a - c == 1 && b == d)
             {
                 Console.WriteLine($"Черная пешка может сходить на поле {c},{d}");
             }
-            else if ((c - a == -1 && d - b == -1) || (a - c == -1 && b - d == -1))
+            else if ((c - a == -1 && abs(d - b) == 1))
             {
                 Console.WriteLine($"Черная пешка может бить фигуру на поле {c}, {d}");
             }
@@ -93,7 +93,7 @@ namespace Lessons{
                 Console.WriteLine("Черная пешка не может сходить на это поле и нет фигур, которых можно бить на данном поле.");
             }
 
-            if ((a - c == 2 && b - d == -1) || (a - c == 2 && b - d == 1) || (a - c == -2 && b - d == -1) || (a - c == -2 && b - d == 1) || (b - d == -2 && a - c == 1) || (b - d == -2 && a - c == -1) || (b - d == 2 && a - c == 1) || (b - d == 2 && a - c == -1))
+            if ((abs(a- c) == 2 && abs(b-d) == 1) || (abs(a -c) == 1 && abs(b - d) == 2))
             {
                 Console.WriteLine($"Конь угрожает полю {c},{d}");
             }
