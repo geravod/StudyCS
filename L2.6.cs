@@ -26,7 +26,7 @@ namespace Lessons{
             b = Convert.ToInt32(Console.ReadLine());
             c = Convert.ToInt32(Console.ReadLine());
             d = Convert.ToInt32(Console.ReadLine());
-            if ((a > 8 && a <= 0) || (b > 8 && b <= 0) || (c > 8 && c <= 0) || (d > 8 && d <= 0))
+            if ((a > 8 || a <= 0) || (b > 8 || b <= 0) || (c > 8 || c <= 0) || (d > 8 || d <= 0))
             {
                 Console.WriteLine("Введены некорректыне данные.");
             }
